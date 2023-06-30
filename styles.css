@@ -66,8 +66,8 @@ input {
   font-size: 0.8rem;
   font-style: normal;
   border-radius: 10px;
-  border: red solid 1px;
-  background-color: white;
+  border: red solid 0.5px;
+  background-color: rgba(255, 0, 0, 0.3);
   cursor: pointer;
   margin-left: 15px;
 }
