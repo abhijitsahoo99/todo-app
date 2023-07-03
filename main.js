@@ -12,7 +12,7 @@
 
     const deleteTodo = (id) => {
       console.log(id);
-      fetch(`http://localhost:3000/todos/${id}`, {
+      fetch(`/todos/${id}`, {
         method: "DELETE",
       }).then(() => deleteDatacallback(id.toString()));
     };
@@ -48,7 +48,7 @@
       res.json().then(todosCallback);
     };
     const getData = () => {
-      fetch("http://localhost:3000/todos", {
+      fetch("/todos", {
         method: "GET",
       }).then(getDatacallback);
     };
@@ -85,7 +85,7 @@
     };
 
     // const onPress = () => {
-    //     fetch("http://localhost:3000/todos" , {
+    //     fetch("/todos" , {
     //         method: "GET",
     //     }).then(callback)
     // }
