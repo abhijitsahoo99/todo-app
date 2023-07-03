@@ -5,7 +5,16 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
 
-  <script>
+  <body>
+    <div class="container">
+      <div class="todo-area">
+        <input type="text" placeholder="Enter title" id="title" />
+        <input type="text" placeholder="Enter description" id="description" />
+        <button class="btn" onclick="onPress()">+</button>
+      </div>
+      <div id="main-area"></div>
+    </div>
+    <script>
     const deleteDatacallback = (todoId) => {
       console.log("Delete done");
       //   Delete the right todo from the list
@@ -117,15 +126,5 @@
       }
     };
   </script>
-
-  <body>
-    <div class="container">
-      <div class="todo-area">
-        <input type="text" placeholder="Enter title" id="title" />
-        <input type="text" placeholder="Enter description" id="description" />
-        <button class="btn" onclick="onPress()">+</button>
-      </div>
-      <div id="main-area"></div>
-    </div>
   </body>
 </html>
