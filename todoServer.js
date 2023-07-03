@@ -12,6 +12,14 @@ app.use(cors());
 
 let todos = [];
 
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, "./index.html"));
+});
+
+app.get('/main.css', (req, res) => {
+  res.sendFile(path.join(__dirname, "./main.css"));
+});
+
 app.get('/todos', (req, res) => {
   res.json(todos);
 });
