@@ -8,22 +8,23 @@ const app = express();
 
 app.use(bodyParser.json());
 app.use(cors());
-app.use(express.static('assets'))
+// app.use(express.static('assets'))
+app.use(express.static("public")); 
 
 
 let todos = [];
 
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, "./index.html"));
-});
+// app.get('/', (req, res) => {
+//   res.sendFile(path.join(__dirname, "./index.html"));
+// });
 
-app.get('/styles.css', (req, res) => {
-  res.sendFile(path.join(__dirname, "./styles.css"));
-});
+// app.get('/styles.css', (req, res) => {
+//   res.sendFile(path.join(__dirname, "./styles.css"));
+// });
 
-app.get('/main.js', (req, res) => {
-  res.sendFile(path.join(__dirname, "./main.js"));
-});
+// app.get('/main.js', (req, res) => {
+//   res.sendFile(path.join(__dirname, "./main.js"));
+// });
 
 
 app.get('/todos', (req, res) => {
