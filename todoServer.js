@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const path = require("node:path");
+const path = require('path');
 const port = 3000;
 
 const app = express();
@@ -24,6 +24,7 @@ app.get('/styles.css', (req, res) => {
 app.get('/main.js', (req, res) => {
   res.sendFile(path.join(__dirname, "./main.js"));
 });
+
 
 app.get('/todos', (req, res) => {
   res.json(todos);
