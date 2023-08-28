@@ -1,0 +1,90 @@
+body {
+  height: 100%;
+  width: 100%;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* @media (max-width: 480px) {
+  body {
+    background-image: url(assets/pexels-photo-2941985.jpeg);
+
+  }
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+  body {
+    background-image: url(assets/pexels-photo-2941985.jpeg);
+  }
+}
+@media (min-width: 1025px) {
+  body {
+    background-image: url(assets/pexels-photo-2941985.jpeg);
+  }
+} */
+
+.todo-area {
+  width: 85%;
+  padding: 20px 10px;
+  border-radius: 20px;
+  /* box-shadow: 0 0 3px; */
+  display: flex;
+  justify-content: center;
+}
+input {
+  flex: 5;
+  margin-right: 10px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  padding: 8px;
+  border: green solid 2px;
+}
+.btn {
+  flex: 1;
+  transition: 0, 3s;
+  font-size: 1rem;
+  padding: 8px;
+  background-color: #fff;
+  color: green;
+  border: green solid 2px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: green;
+  color: #fff;
+}
+#main-area {
+  width: 80%;
+  margin-right: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#main-area div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: transparent;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  padding: 10px;
+}
+#main-area span {
+  font-size: 1.2rem;
+  font-style: italic;
+  flex: 5;
+  margin-right: 15px;
+  padding: 1px;
+}
+#main-area button {
+  font-size: 0.8rem;
+  font-style: normal;
+  border-radius: 10px;
+  border: red solid 0.5px;
+  background-color: rgba(255, 0, 0, 0.3);
+  cursor: pointer;
+  margin-left: 15px;
+}
