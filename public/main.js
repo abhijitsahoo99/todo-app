@@ -98,7 +98,7 @@
     if (title === "" || description === "") {
       alert("Please enter a title and description");
     } else {
-      fetch("http://localhost:3000/todos", {
+      fetch("https://todo-app-i4jl.onrender.com/todos", {
         method: "POST",
         body: JSON.stringify({
           title: title,
